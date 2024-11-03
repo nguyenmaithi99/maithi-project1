@@ -41,12 +41,21 @@ a{
     overflow: hidden;
 }
 
+.nav-fixed{
+    background: #e6f0ff;
+    padding-top: 26px;
+    position: sticky;
+    top: -26px;
+    z-index: 1;
+}
+
 /* header */
-.header{
+.hero-wrap{
     /* backgound */
     background-color: #e6f0ff;
     position: relative;
-    height: 100vh;
+    height: calc(100vh - 90px);
+    display: flex;
 }
 .content{
     width: 1110px;
@@ -58,8 +67,8 @@ a{
 .navbar{
     display: flex;
     align-items: center;
-    padding-top: 38px;
-    position: -webkit-sticky;
+    padding: 12px 0;
+
 }
 
 .navbar ul {
@@ -96,12 +105,14 @@ a{
 /* hero */
 .hero{
     margin-top: 130px;
+
+
 }
 
 .hero .for{
      width: 51%;
 }
-.hero .sub-title{
+.hero .for p {
     font-weight: 500;
     font-style: 1.8rem;
     line-height: 1.5;
@@ -154,11 +165,26 @@ a{
     line-height: 1.25rem; 
     color: #7D8589;
 }
-.img-logo{
+.img-logo {
     display: flex;
     margin-top: 96px;
     justify-content: space-between;
     align-items: center;
+}
+
+.img-logo a {
+    display: flex;
+    align-items: center;
+   
+    padding: 0 41px;
+    height: 91px;
+
+}
+
+.img-logo a:hover{
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.10);
 }
 /* ============guide============= */
 .guide{
